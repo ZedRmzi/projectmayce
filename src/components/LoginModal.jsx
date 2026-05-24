@@ -15,8 +15,17 @@ const LoginModal = ({ onClose }) => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       onClose();
-    } catch {
-      setError('Invalid email or password.');
+    } catch (err) {
+      const code = err?.code ?? '';
+      if (code === 'auth/unauthorized-domain') {
+        setError('This domain is not authorised in Firebase. Add it under Authentication → Settings → Authorised domains.');
+      } else if (code === 'auth/operation-not-allowed') {
+        setError('Email/Password sign-in is not enabled. Enable it in Firebase → Authentication → Sign-in method.');
+      } else if (code === 'auth/user-not-found' || code === 'auth/wrong-password' || code === 'auth/invalid-credential') {
+        setError('Incorrect email or password.');
+      } else {
+        setError(`Login failed: ${code || err?.message || 'unknown error'}`);
+      }
     } finally {
       setLoading(false);
     }
