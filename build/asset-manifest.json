@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/projectmayce/static/css/main.bd5537ca.css",
-    "main.js": "/projectmayce/static/js/main.fa7abed0.js",
+    "main.js": "/projectmayce/static/js/main.ebcbbfca.js",
     "static/js/787.5de447d7.chunk.js": "/projectmayce/static/js/787.5de447d7.chunk.js",
     "static/media/lilly.jpg": "/projectmayce/static/media/lilly.a551b839829e7bdaacf8.jpg",
     "static/media/IMG_5177.jpg": "/projectmayce/static/media/IMG_5177.28b22c182963d2b5b6aa.jpg",
     "index.html": "/projectmayce/index.html",
     "main.bd5537ca.css.map": "/projectmayce/static/css/main.bd5537ca.css.map",
-    "main.fa7abed0.js.map": "/projectmayce/static/js/main.fa7abed0.js.map",
+    "main.ebcbbfca.js.map": "/projectmayce/static/js/main.ebcbbfca.js.map",
     "787.5de447d7.chunk.js.map": "/projectmayce/static/js/787.5de447d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd5537ca.css",
-    "static/js/main.fa7abed0.js"
+    "static/js/main.ebcbbfca.js"
   ]
 }
